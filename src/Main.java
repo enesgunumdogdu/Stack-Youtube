@@ -5,21 +5,18 @@ public class Main {
 
         System.out.println("Hello world");
         Stack<Integer> stack = new Stack<>();
-        System.out.println("Stack 1.durum=" + stack);
-        System.out.println("Stack boş mu? " + stack.isEmpty());
+        System.out.println("Stack state 1: " + stack);
+        System.out.println("Is stack empty? " + stack.isEmpty());
 
         stack.push(15);
         stack.push(23);
         stack.push(45);
 
-        System.out.println("Stack 2.durum=" + stack);
-        System.out.println("Stack boş mu? " + stack.isEmpty());
+        System.out.println("Stack state 2: " + stack);
+        System.out.println("Is stack empty? " + stack.isEmpty());
 
-        System.out.println("Stackin en üstteki elemanı= " + stack.peek());
-        System.out.println("Çıkarılan eleman = " + stack.pop());
-        System.out.println("Stack 3.durum=" + stack);
-
-
-
-        }
+        System.out.println("Top element of stack: " + stack.peek());
+        System.out.println("Popped element: " + stack.pop());
+        System.out.println("Stack state 3: " + stack);
+    }
 }
